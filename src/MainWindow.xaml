@@ -1,0 +1,78 @@
+﻿<Window x:Class="RitenDuo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RitenDuo"
+        mc:Ignorable="d"
+        Title="Riten Interest Calculator" Height="450" Width="750" 
+        MinHeight="450" 
+        MinWidth="750" 
+        FontFamily="Cascadia Mono Light" ResizeMode="NoResize" MaxHeight="450" MaxWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="347*"/>
+            <ColumnDefinition Width="153*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="2">
+            <TabItem Header="Simple" FontSize="16" FontFamily="Cascadia Mono SemiLight" Width="250" Height="30">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="163*"/>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="73*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Principal" HorizontalAlignment="Left" Margin="5,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="180"/>
+                    <TextBox x:Name="TxtPrincipal" HorizontalAlignment="Left" Height="30" Margin="5,330,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="180" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtPrincipal_TextChanged"/>
+                    <Label Content="Years" HorizontalAlignment="Left" Margin="33,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Grid.ColumnSpan="2" Grid.Column="1" Width="80"/>
+                    <TextBox x:Name="TxtTime" HorizontalAlignment="Left" Height="30" Margin="33,330,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="80" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtTime_TextChanged" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Rate (%)" HorizontalAlignment="Left" Margin="275,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="180"/>
+                    <TextBox x:Name="TxtRate" HorizontalAlignment="Left" Height="30" Margin="275,330,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="180" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtRate_TextChanged"/>
+                    <TextBlock x:Name="TxtSimpleInterest" HorizontalAlignment="Left" Margin="5,70,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="720" Height="110" Background="#FFC4E6E2" Padding="50,16,0,0" FontSize="60" Grid.ColumnSpan="3"/>
+                    <Button x:Name="BtnCalculate" Content="»" HorizontalAlignment="Left" Margin="134,330,0,0" VerticalAlignment="Top" Width="67" Click="BtnCalculate_Click" Height="30" Grid.IsSharedSizeScope="True" FontFamily="Cascadia Mono SemiLight" ToolTip="Calculate" Grid.Column="2"/>
+                    <TextBlock x:Name="TxtSimpleGain" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="720" Height="110" Background="#FFC4E6E2" Padding="50,25,0,0" FontSize="16" FontFamily="Cascadia Mono SemiLight" Margin="5,180,0,0" Grid.ColumnSpan="3"/>
+                    <TextBlock x:Name="LblSimple" HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="Simple Interest" VerticalAlignment="Top" Width="720" Height="60" Background="#FFC4E6E2" Padding="50,25,0,0" FontSize="12" Grid.ColumnSpan="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Compound" FontSize="16" FontFamily="Cascadia Mono SemiLight" Width="250" Height="30">
+                <Grid>
+
+                    <TextBlock x:Name="LblCompound" HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="Total Amount" VerticalAlignment="Top" Width="720" Height="60" Background="#FFC4E6E2" Padding="50,25,0,0" FontSize="12" Grid.ColumnSpan="4"/>
+                    <TextBlock x:Name="TxtCompoundInterest" HorizontalAlignment="Left" Margin="5,70,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="720" Height="110" Background="#FFC4E6E2" Padding="50,16,0,0" FontSize="60" Grid.ColumnSpan="4"/>
+                    <TextBlock x:Name="TxtCompoundGain" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="720" Height="110" Background="#FFC4E6E2" Padding="50,25,0,0" FontSize="16" FontFamily="Cascadia Mono SemiLight" Margin="5,180,0,0"/>
+                    <Label Content="Capital" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="150"/>
+                    <TextBox x:Name="TxtCapitalC" HorizontalAlignment="Left" Height="30" Margin="10,330,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="150" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtCapitalC_TextChanged"/>
+
+                    <Label Content="Principal" HorizontalAlignment="Left" Margin="181,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="150"/>
+                    <TextBox x:Name="TxtPrincipalC" HorizontalAlignment="Left" Height="30" Margin="181,330,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="150" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtPrincipalC_TextChanged"/>
+
+                    <Label Content="Rate (%)" HorizontalAlignment="Left" Margin="354,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13"/>
+                    <TextBox x:Name="TxtRateC" HorizontalAlignment="Left" Height="30" Margin="354,330,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="71" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtRateC_TextChanged"/>
+
+                    <Button x:Name="BtnCalculateC" Content="»" HorizontalAlignment="Left" Margin="658,330,0,0" VerticalAlignment="Top" Width="67" Height="30" Grid.IsSharedSizeScope="True" FontFamily="Cascadia Mono SemiLight" ToolTip="Calculate" Click="BtnCalculateC_Click"/>
+                    <Label Content="Years" HorizontalAlignment="Left" Margin="450,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="61"/>
+                    <TextBox x:Name="TxtTimeC" HorizontalAlignment="Left" Height="30" Margin="450,330,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="61" FontFamily="Cascadia Mono SemiLight" FontSize="13" VerticalContentAlignment="Center" TextChanged="TxtTimeC_TextChanged"/>
+                    <Label Content="Frequency" HorizontalAlignment="Left" Margin="533,305,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiLight" FontSize="13" Width="84"/>
+                    <ComboBox x:Name="CmbFrequency" HorizontalAlignment="Left" Margin="533,330,0,0" VerticalAlignment="Top" Width="110" Height="30">
+                        <ComboBoxItem IsSelected="True">Annually</ComboBoxItem>
+                        <ComboBoxItem>Semiannually</ComboBoxItem>
+                        <ComboBoxItem>Quarterly</ComboBoxItem>
+                        <ComboBoxItem>Monthly</ComboBoxItem>
+                        <ComboBoxItem>Daily</ComboBoxItem>
+                    </ComboBox>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="About" FontSize="16" FontFamily="Cascadia Mono SemiLight" Height="30" Width="230">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="Formulae" VerticalAlignment="Top" Width="360" Height="60" Background="#FFC4E6E2" Padding="50,25,0,0" FontSize="12" Grid.ColumnSpan="4"/>
+                    <TextBlock  x:Name="lblFormulae" HorizontalAlignment="Left" Margin="5,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="300" Background="#FFC4E6E2" Padding="50,16,0,0" FontSize="12"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="394,10,0,0" TextWrapping="Wrap" Text="Application Info" VerticalAlignment="Top" Width="330" Height="60" Background="#FFEDF7EF" Padding="50,25,0,0" FontSize="12"/>
+                    <TextBlock x:Name="lblAbout" HorizontalAlignment="Left" Margin="394,70,0,0" TextWrapping="Wrap" Text="Application Info" VerticalAlignment="Top" Width="330" Height="300" Background="#FFEDF7EF" Padding="50,25,0,0" FontSize="16"/>
+
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>
