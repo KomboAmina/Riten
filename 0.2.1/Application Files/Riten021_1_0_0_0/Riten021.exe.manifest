@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Riten021.exe" version="1.0.0.0" publicKeyToken="ddea3f3022962c90" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Riten021" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Riten021.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Riten021.exe" size="63912">
+      <assemblyIdentity name="Riten021" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B1wRZRq6qYEMvs+UiaHKgV+bWA977R8Z+EefTuvpNdI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Riten021.resources.dll" size="4096">
+      <assemblyIdentity name="Riten021.resources" version="1.0.0.0" language="en-US" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QUoO/6vQANuFtFdLODMIU76GG9nxkzg4cn36NAIUQoY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Riten021.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LUNASOL\Xan" issuerKeyHash="ae7a9c3248b26324114bd3017d2a677e734452e8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OnlepjBdJihnk0pTt7CHwYKUZvmnUPwHRu0sFIfVW2I=</DigestValue></Reference></SignedInfo><SignatureValue>GfSDTtcitSpRgE1TjKkTLjRxdA1GUrZwMZF4WfKbwzpbQjICs5Kaycoe/93F40AoZqHJnLLRCpGy+VtcUrynjggBXFO6kwlbZSbtvkLw1N5dTilkm0fONtRYNE3vcd0ZpzSsmskXeVyhc2ImzlRjDrZ0Ey0dzcDTFxPeG+cYSnE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uoLGBEy+nEDjt/T4vOoGiaMUigDjqwcNjeua1zLUUB+P22YuoHgidZj8TRAVoXoeqmU8qlBr3eDD1XWRv3EV44QTqInG4TqUeJMWG1YyaQhF1sm0DNYPKOQIy39McBNXGZNfGRzQcJSVhlqP0RsfA5it1ZcgYo1d5iuVQNhFDm0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="625bd587142ced4607fc50a7f9669482c187b0b7534a936728265d30a65e793a" Description="" Url=""><as:assemblyIdentity name="Riten021.exe" version="1.0.0.0" publicKeyToken="ddea3f3022962c90" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LUNASOL\Xan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Mdzp6egKESo+oY5scZdF04y3C0zmnhymHhsjj8D3xnI=</DigestValue></Reference></SignedInfo><SignatureValue>fyaQkyt4aHhyXUaj+nbIwANMVB6G+0i1B0c334doS50+PAAi/f3Sc7fyRx6r6ikVvHWRZzSbz25a86bFhM+77APA/AzTOI2Co87wulVv5IVzPDTFT+HS5zw8EJRvPWGjl7N887ocYdYwjS6AIaLuYyFdeOmbV47gRhCIhtRQKlw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uoLGBEy+nEDjt/T4vOoGiaMUigDjqwcNjeua1zLUUB+P22YuoHgidZj8TRAVoXoeqmU8qlBr3eDD1XWRv3EV44QTqInG4TqUeJMWG1YyaQhF1sm0DNYPKOQIy39McBNXGZNfGRzQcJSVhlqP0RsfA5it1ZcgYo1d5iuVQNhFDm0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQFCTjVoKOdJhE0JoQCsOoBzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYATABVAE4AQQBTAE8ATABcAFgAYQBuMB4XDTIzMDcxMTAxNDIyN1oXDTI0MDcxMDA3NDIyN1owITEfMB0GA1UEAx4WAEwAVQBOAEEAUwBPAEwAXABYAGEAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuoLGBEy+nEDjt/T4vOoGiaMUigDjqwcNjeua1zLUUB+P22YuoHgidZj8TRAVoXoeqmU8qlBr3eDD1XWRv3EV44QTqInG4TqUeJMWG1YyaQhF1sm0DNYPKOQIy39McBNXGZNfGRzQcJSVhlqP0RsfA5it1ZcgYo1d5iuVQNhFDm0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAwSwWdTbdKcTPwm/QIC640toAcfEewcXArZ84i3Cu1FVpUgDvHUuhd83dBDsBE1pyDA/MSRSPekFw/2jyVq3VMRQxNS7q7ibhlKgQjkecs+W1NzeZbosgdQOUwhSMDRX3p0qKNRp01qkRf/8vX3RASevjusCqy8fWCE/Y3COpfrg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
